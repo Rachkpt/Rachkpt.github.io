@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aledji Ar-Rachad — Accueil</title>
+  <meta name="description" content="Portfolio d'Aledji Ar-Rachad — Étudiant en Licence SRI (Systèmes et Réseaux Informatiques) à l'ESIG, Analyste SOC, Administrateur Système & Réseau et joueur de CTF.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+<div id="progress-bar" aria-hidden="true"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <nav class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-badge"><i class="fa-solid fa-shield-halved"></i></span>
+      <span>Ar-Rachad <strong>Aledji</strong></span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link active">Accueil</a></li>
+      <li><a href="apropos.html" class="nav-link">À propos</a></li>
+      <li><a href="competences.html" class="nav-link">Compétences</a></li>
+      <li><a href="projets.html" class="nav-link">Projets</a></li>
+      <li><a href="experience.html" class="nav-link">Expérience</a></li>
+      <li><a href="terminal.html" class="nav-link">Terminal</a></li>
+      <li><a href="contact.html" class="nav-link nav-cta">Me contacter</a></li>
+    </ul>
+
+    <button class="menu-btn" id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section id="accueil" class="hero">
+  <div class="hero-decor hero-decor-1"></div>
+  <div class="hero-decor hero-decor-2"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-text reveal-left">
+      <span class="hero-tag"><span class="dot-online"></span> Disponible pour tout projet &amp; opportunité de travail</span>
+
+      <h1>Bonjour, je suis <span class="accent">Aledji Ar-Rachad</span></h1>
+
+      <p class="hero-alias">alias <span>12ak_H4ck</span></p>
+
+      <h2 class="hero-role">Analyste SOC <span class="sep">/</span> Administrateur Système &amp; Réseau <span class="sep">/</span> Joueur de CTF</h2>
+
+      <p class="hero-desc">
+        Étudiant en <strong>Licence SRI (Systèmes et Réseaux Informatiques) à l'ESIG</strong>, je suis autant à l'aise
+        en <strong>administration réseau</strong> (labs GNS3 &amp; Cisco, VLAN, routage OSPF/Inter-VLAN, pare-feu) qu'en
+        <strong>sécurité défensive</strong> : je conçois des architectures de détection et j'automatise la sécurité avec
+        des outils 100&nbsp;% open-source. Passionné par l'offensif comme le défensif, je transforme chaque alerte en
+        opportunité d'apprendre.
+      </p>
+
+      <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Lomé, Togo</p>
+
+      <div class="hero-actions">
+        <a href="https://www.linkedin.com/in/ar-rachad-aledji" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <img src="assets/linkedin.png" alt="" class="btn-ico" aria-hidden="true"> LinkedIn
+        </a>
+        <a href="https://github.com/Rachkpt" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <img src="assets/github.png" alt="" class="btn-ico" aria-hidden="true"> GitHub
+        </a>
+        <a href="https://www.credly.com/users/aledji-ar-rachad" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <i class="fa-solid fa-certificate"></i> Profil Credly
+        </a>
+        <a href="mailto:aledjiarrachad1@gmail.com" class="btn btn-outline">
+          <img src="assets/gmail.png" alt="" class="btn-ico" aria-hidden="true"> M'écrire
+        </a>
+        <!-- Bouton de téléchargement : dépose ton CV nommé "assets/cv.pdf" dans le dossier -->
+        <a href="assets/cv.pdf" download class="btn btn-outline">
+          <i class="fa-solid fa-download"></i> Télécharger mon CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card reveal-right">
+      <!-- ============================================================
+           >>> C'EST ICI QUE TA PHOTO S'AFFICHE <<<
+           Pour l'ajouter : dépose ton image dans CE dossier (à côté
+           de index.html) et nomme-la EXACTEMENT :  photo.jpg
+           (format carré conseillé, ex. 500x500 px).
+           ============================================================ -->
+      <div class="hero-avatar">
+        <img src="assets/photo.jpg" alt="Photo d'Aledji Ar-Rachad"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="hero-avatar-fallback">
+          <i class="fa-solid fa-camera-retro"></i>
+          <small>Ajoutez<br>photo.jpg</small>
+        </span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" data-count="14">0</span>
+          <span class="stat-label">Projets réalisés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="20">0</span>
+          <span class="stat-label">Outils maîtrisés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="4">0</span>
+          <span class="stat-label">Plateformes CTF</span>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="badge-soft"><i class="fa-solid fa-shield-halved"></i> Blue Team</span>
+        <span class="badge-soft"><i class="fa-solid fa-network-wired"></i> Réseaux &amp; Labs</span>
+        <span class="badge-soft"><i class="fa-solid fa-flag-checkered"></i> CTF Player</span>
+        <span class="badge-soft"><i class="fa-solid fa-gears"></i> Automatisation</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#suite" class="scroll-hint" aria-label="Continuer la visite">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ================= PAGE SUIVANTE ================= -->
+<div class="page-next-wrap" id="suite">
+  <a href="apropos.html" class="page-next reveal-zoom">
+    <span class="page-next-kicker"><i class="fa-solid fa-compass"></i> Continue la visite</span>
+    <span class="page-next-title">À propos de moi <i class="fa-solid fa-arrow-right-long"></i></span>
+  </a>
+</div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>
+      © <span id="year"></span> Aledji Ar-Rachad — 12ak_H4ck. Tous droits réservés.<br>
+      <span class="footer-made">Conçu avec passion à Lomé, Togo</span>
+    </p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ar-rachad-aledji" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/linkedin.png" alt="" class="footer-img" aria-hidden="true"></a>
+      <a href="https://github.com/Rachkpt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="assets/github.png" alt="" class="footer-img" aria-hidden="true"></a>
+      <a href="https://www.credly.com/users/aledji-ar-rachad" target="_blank" rel="noopener noreferrer" aria-label="Certifications Credly"><i class="fa-solid fa-certificate"></i></a>
+      <a href="mailto:aledjiarrachad1@gmail.com" aria-label="Email"><img src="assets/gmail.png" alt="" class="footer-img" aria-hidden="true"></a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Revenir en haut de page"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
