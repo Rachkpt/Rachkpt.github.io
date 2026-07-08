@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aledji Ar-Rachad — Projets</title>
+  <meta name="description" content="Projets d'Aledji Ar-Rachad : automatisation SOC, architecture de détection, IDS/IPS Suricata, infrastructures réseau Cisco/GNS3, supervision, VoIP et plus.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+<div id="progress-bar" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <nav class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-badge"><i class="fa-solid fa-shield-halved"></i></span>
+      <span>Ar-Rachad <strong>Aledji</strong></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="apropos.html" class="nav-link">À propos</a></li>
+      <li><a href="competences.html" class="nav-link">Compétences</a></li>
+      <li><a href="projets.html" class="nav-link active">Projets</a></li>
+      <li><a href="experience.html" class="nav-link">Expérience</a></li>
+      <li><a href="terminal.html" class="nav-link">Terminal</a></li>
+      <li><a href="contact.html" class="nav-link nav-cta">Me contacter</a></li>
+    </ul>
+    <button class="menu-btn" id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+<!-- Photo ronde flottante (retour accueil) -->
+<a href="index.html" class="float-photo" aria-label="Aledji Ar-Rachad — retour à l'accueil" title="Aledji Ar-Rachad">
+  <img src="assets/photo.jpg" alt="Aledji Ar-Rachad" onerror="this.closest('.float-photo').classList.add('no-photo')">
+</a>
+
+<main id="main">
+
+<section id="projets" class="section page-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-kicker">Mes réalisations</span>
+      <h2>Projets réalisés</h2>
+    </div>
+
+    <!-- Projet phare -->
+    <article class="featured-project reveal">
+      <span class="featured-label"><i class="fa-solid fa-star"></i> Projet phare</span>
+      <div class="featured-body">
+        <div class="featured-icon"><i class="fa-solid fa-gears"></i></div>
+        <div>
+          <h3>Automatisation complète d'un SOC</h3>
+          <p>
+            Stack SOC développée en Python intégrant Wazuh, Suricata, TheHive, Cortex et Fail2Ban,
+            avec un bot Telegram pour l'alerting en temps réel et l'administration à distance.
+          </p>
+          <ul class="featured-points">
+            <li>Détection automatique d'anomalies et polling d'alertes par curseur</li>
+            <li>Pipeline d'auto-analyse FIM et promotion Alerte&nbsp;→&nbsp;Cas dans TheHive</li>
+            <li>Déduplication par batch, notifications Telegram + Email multi-destinataires</li>
+            <li>Self-monitoring des services SOC, déploiement Debian via systemd</li>
+            <li>Réponses automatisées aux incidents</li>
+          </ul>
+          <div class="tags tags-accent">
+            <span>Python</span><span>Wazuh</span><span>Suricata</span>
+            <span>TheHive</span><span>Cortex</span><span>Fail2Ban</span><span>Telegram</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <p class="skills-hint reveal"><i class="fa-solid fa-hand-pointer"></i> Clique sur un projet pour dérouler les détails</p>
+
+    <div class="projects-grid">
+
+      <article class="project-card project-card-highlight reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="true">
+          <span class="project-icon"><i class="fa-solid fa-bolt"></i></span>
+          <h3>Plateforme SOC automatisée — réponse en &lt;&nbsp;30&nbsp;s</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Plateforme SOC complète : détection temps réel avec Splunk, orchestration Python/Flask (webhooks), création automatique de cas TheHive, enrichissement des IOC via VirusTotal, blocage automatique des IP malveillantes (iptables/netsh) avec déblocage temporisé, push des IOC vers MISP, alertes Telegram &amp; Email.</p>
+          <div class="tags"><span>Splunk</span><span>Python / Flask</span><span>TheHive</span><span>Cortex</span><span>MISP</span><span>VirusTotal</span><span>Suricata</span></div>
+          <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_cybersecurity-infosec-soc-activity-7450800405443211264-N3fD" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-layer-group"></i></span>
+          <h3>Architecture de détection autonome (5 couches)</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Architecture Blue Team complète 100&nbsp;% open-source avec pipeline de threat intelligence OpenCTI + MISP.</p>
+          <div class="tags"><span>Wazuh</span><span>Elastic SIEM</span><span>Zeek</span><span>Shuffle</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-satellite-dish"></i></span>
+          <h3>IDS/IPS Suricata + Telegram</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Détection et prévention d'intrusion avec alerting Telegram, couplé à iptables (chaînes custom) et Fail2Ban.</p>
+          <div class="tags"><span>Suricata</span><span>iptables</span><span>Fail2Ban</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-building-shield"></i></span>
+          <h3>Infrastructure réseau sécurisée (pfSense + AD + Graylog)</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Infrastructure complète avec authentification Captive Portal reliée à Active Directory via RADIUS, IDS/IPS Snort, verrouillage des postes par GPO et supervision avancée des logs (DHCP, alertes Snort, événements Windows/AD) avec Graylog.</p>
+          <div class="tags"><span>pfSense</span><span>Snort</span><span>Windows Server 2025</span><span>Active Directory</span><span>RADIUS</span><span>Graylog</span></div>
+          <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_cybersecurity-networksecurity-infosec-activity-7364665097320906753-88R0" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-tower-observation"></i></span>
+          <h3>Supervision réseau de l'ESIG</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Déploiement d'une solution Wazuh : collecte et analyse des événements de sécurité, surveillance des équipements.</p>
+          <div class="tags"><span>Wazuh</span><span>Monitoring</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-gauge-high"></i></span>
+          <h3>Monitoring Prometheus + Grafana</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Stack de métriques et de dashboards pour la supervision d'infrastructure.</p>
+          <div class="tags"><span>Prometheus</span><span>Grafana</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-sitemap"></i></span>
+          <h3>Infrastructure d'entreprise multi-sites (Cisco Packet Tracer)</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Architecture réseau fiable, évolutive et sécurisée reliant plusieurs départements et sites : VLANs, routage inter-VLAN niveau 3, haute disponibilité HSRP, routage dynamique OSPF, EtherChannel, DHCP, DNS/HTTP et Wi-Fi intégré.</p>
+          <div class="tags"><span>Cisco Packet Tracer</span><span>OSPF</span><span>HSRP</span><span>VLAN</span><span>EtherChannel</span></div>
+          <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_cisco-networking-ciscopackettracer-activity-7463484083701207040-ZGJE" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-shield-heart"></i></span>
+          <h3>Simulation d'entreprise sécurisée (GNS3 + FortiGate)</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Projet d'équipe (ESIG) : 3 LAN segmentés en VLANs + zone DMZ, sécurisation inter-zones par deux pare-feu FortiGate, contrôleur de domaine Active Directory, supervision Zabbix, GPO de partage automatique et tests de sécurité sous Parrot OS.</p>
+          <div class="tags"><span>GNS3</span><span>FortiGate</span><span>Active Directory</span><span>Zabbix</span><span>Parrot OS</span></div>
+          <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_raezseaux-cybersaezcuritaez-gns3-activity-7323001615836180481-eH9N" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon project-icon-img"><img src="assets/gns3.png" alt="" aria-hidden="true"></span>
+          <h3>Laboratoires réseau GNS3</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Infrastructures complètes : VLAN, DHCP, routage Inter-VLAN, EtherChannel, NAT, ACL. Conception et dépannage.</p>
+          <div class="tags"><span>GNS3</span><span>VLAN</span><span>NAT / ACL</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-phone-volume"></i></span>
+          <h3>Laboratoire VoIP (SIP/RTP)</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Environnement SIP/RTP, génération de trafic et analyse des communications avec Wireshark.</p>
+          <div class="tags"><span>SIP</span><span>RTP</span><span>Wireshark</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon project-icon-img"><img src="assets/virtualbox.png" alt="" aria-hidden="true"></span>
+          <h3>Laboratoire multi-services VirtualBox</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Laboratoire de 6 machines virtuelles combinant supervision Nagios, téléphonie IP FreePBX avec redondance (continuité de service), serveur de messagerie ISPConfig et agrégateur FreshRSS — le tout 100&nbsp;% open-source.</p>
+          <div class="tags"><span>VirtualBox</span><span>Nagios</span><span>FreePBX</span><span>ISPConfig</span><span>FreshRSS</span></div>
+          <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_virtualbox-nagios-voip-activity-7298824759901904897-pd1B" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-wifi"></i></span>
+          <h3>Portail captif MikroTik</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Page de connexion hotspot MikroTik personnalisée avec authentification CHAP MD5.</p>
+          <div class="tags"><span>MikroTik</span><span>CHAP MD5</span></div>
+        </div></div>
+      </article>
+
+      <article class="project-card reveal-zoom">
+        <button class="skill-head" type="button" aria-expanded="false">
+          <span class="project-icon"><i class="fa-solid fa-arrow-trend-up"></i></span>
+          <h3>Expert Advisor de trading (MT5)</h3>
+          <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="skill-body"><div class="skill-body-inner">
+          <p>Robot basé sur la méthodologie Wyckoff pour indices de volatilité : clustering des supports/résistances, filtre de tendance H1.</p>
+          <div class="tags"><span>MQL5</span><span>MetaTrader 5</span></div>
+        </div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="page-next-wrap">
+  <a href="experience.html" class="page-next reveal-zoom">
+    <span class="page-next-kicker"><i class="fa-solid fa-compass"></i> Continue la visite</span>
+    <span class="page-next-title">Mon expérience <i class="fa-solid fa-arrow-right-long"></i></span>
+  </a>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>
+      © <span id="year"></span> Aledji Ar-Rachad — 12ak_H4ck. Tous droits réservés.<br>
+      <span class="footer-made">Conçu avec passion à Lomé, Togo</span>
+    </p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ar-rachad-aledji" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/linkedin.png" alt="" class="footer-img" aria-hidden="true"></a>
+      <a href="https://github.com/Rachkpt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="assets/github.png" alt="" class="footer-img" aria-hidden="true"></a>
+      <a href="https://www.credly.com/users/aledji-ar-rachad" target="_blank" rel="noopener noreferrer" aria-label="Certifications Credly"><i class="fa-solid fa-certificate"></i></a>
+      <a href="mailto:aledjiarrachad1@gmail.com" aria-label="Email"><img src="assets/gmail.png" alt="" class="footer-img" aria-hidden="true"></a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Revenir en haut de page"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
