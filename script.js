@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Portfolio — Aledji Ar-Rachad
+   Portfolio - Aledji Ar-Rachad
    Interactions : menu mobile, navbar, animations au scroll, compteurs
    ========================================================================== */
 
@@ -93,8 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function animateCounter(el) {
     const target = parseInt(el.dataset.count, 10);
+    const suffix = el.dataset.suffix || "";
     if (reduceMotion) {
-      el.textContent = target;
+      el.textContent = target + suffix;
       return;
     }
     const duration = 1400;
@@ -104,7 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const progress = Math.min((now - start) / duration, 1);
       // easing "easeOutCubic" pour un effet doux
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(eased * target);
+      // le suffixe (ex: "+") n'apparaît qu'une fois le compteur terminé
+      el.textContent = Math.round(eased * target) + (progress >= 1 ? suffix : "");
       if (progress < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
@@ -146,10 +148,10 @@ function initTerminal() {
   const history = [];
   let histIndex = -1;
   let awaitingPassword = false;
-  const SUDO_PASSWORD = '12ak_H4ck';           // mot de passe du sudo (voir message)
+  const SUDO_PASSWORD = '__KAT4NA_';           // mot de passe du sudo (voir message)
   const termReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // miroir du texte tapé (pour le curseur bloc animé) — masque le mot de passe
+  // miroir du texte tapé (pour le curseur bloc animé) - masque le mot de passe
   const typed = document.getElementById('term-typed');
   const renderTyped = () => {
     if (typed) typed.textContent = awaitingPassword ? '•'.repeat(input.value.length) : input.value;
@@ -184,7 +186,7 @@ function initTerminal() {
       ].join('\n');
     },
     whoami() {
-      return 'aledji <span class="term-muted">(alias <span class="term-cyan">12ak_H4ck</span>)</span> — <span class="term-cyan">Analyste SOC</span> / <span class="term-cyan">Administrateur Système &amp; Réseau</span> / <span class="term-purple">CTF Player</span>';
+      return 'aledji <span class="term-muted">(alias <span class="term-cyan">__KAT4NA_</span>)</span> - <span class="term-cyan">Analyste SOC</span> / <span class="term-cyan">Administrateur Système &amp; Réseau</span> / <span class="term-purple">CTF Player</span>';
     },
     about() {
       return 'Étudiant en <span class="term-cyan">Licence SRI à l\'ESIG</span> (Lomé, Togo).\nPassionné de Blue Team, d\'automatisation SOC et de réseau. Offensif ET défensif. 100% open-source.';
@@ -202,7 +204,7 @@ function initTerminal() {
     projects() {
       return [
         '<span class="term-yellow">Projets phares :</span>',
-        '  1. Plateforme SOC automatisée (réponse &lt; 30s) — Splunk, TheHive, MISP',
+        '  1. Plateforme SOC automatisée (réponse &lt; 30s) - Splunk, TheHive, MISP',
         '  2. Architecture de détection autonome (5 couches)',
         '  3. Infrastructure sécurisée pfSense + AD + Graylog',
         '  4. Infrastructure multi-sites Cisco (OSPF, HSRP)',
@@ -211,7 +213,7 @@ function initTerminal() {
       ].join('\n');
     },
     experience() {
-      return 'En cours — <span class="term-cyan">Licence SRI, ESIG</span>\nJuillet 2025 — <span class="term-cyan">Stagiaire, ASLER CONNECT</span> (réseau, Wi-Fi, vidéosurveillance)';
+      return 'En cours - <span class="term-cyan">Licence SRI, ESIG</span>\nJuillet 2025 - <span class="term-cyan">Stagiaire, ASLER CONNECT</span> (réseau, Wi-Fi, vidéosurveillance)';
     },
     contact() {
       return 'Email : <span class="term-cyan">aledjiarrachad1@gmail.com</span>\n<span class="term-muted">&gt; Ou utilise le formulaire de la page Contact.</span>';
@@ -235,7 +237,7 @@ function initTerminal() {
         ' / ___ \\| |  __/ (_| || | |\n' +
         '/_/   \\_\\_|\\___|\\__,_|/ |_|\n' +
         '                    |__/   ' +
-        '</span>\n<span class="term-muted">12ak_H4ck — SOC &amp; Réseau</span>';
+        '</span>\n<span class="term-muted">__KAT4NA_ - SOC &amp; Réseau</span>';
     },
     sudo() {
       awaitingPassword = true;
@@ -348,7 +350,7 @@ function initTerminal() {
   }
 
   // message de bienvenue
-  print('<span class="term-green">Bienvenue sur le terminal d\'Aledji — alias <span class="term-cyan">12ak_H4ck</span>.</span>');
+  print('<span class="term-green">Bienvenue sur le terminal d\'Aledji - alias <span class="term-cyan">__KAT4NA_</span>.</span>');
   print('<span class="term-muted">Tape</span> <span class="term-green">help</span> <span class="term-muted">et appuie sur Entrée.</span>');
 
   input.addEventListener('keydown', (e) => {
