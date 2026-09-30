@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Portfolio — Aledji Ar-Rachad
+   Portfolio - Aledji Ar-Rachad
    Thème clair, professionnel et chaleureux
    ========================================================================== */
 
@@ -423,7 +423,7 @@ h1, h2, h3 { font-family: var(--font-title); line-height: 1.25; }
   color: var(--text-soft);
 }
 
-/* Photo ronde flottante (pages internes) — flotte + clic = retour accueil */
+/* Photo ronde flottante (pages internes) - flotte + clic = retour accueil */
 .float-photo {
   position: fixed;
   top: 88px;
@@ -921,7 +921,7 @@ h1, h2, h3 { font-family: var(--font-title); line-height: 1.25; }
 }
 
 /* ==========================================================================
-   Expérience — timeline
+   Expérience - timeline
    ========================================================================== */
 .timeline {
   position: relative;
