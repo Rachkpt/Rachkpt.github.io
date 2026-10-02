@@ -98,11 +98,16 @@
             <span><img src="assets/aws.png" class="tag-ico" aria-hidden="true">AWS</span>
             <span><img src="assets/proxmox.png" class="tag-ico" aria-hidden="true">Proxmox</span>
             <span><img src="assets/wireguard.png" class="tag-ico" aria-hidden="true">WireGuard</span>
-            <span>Traefik</span>
+            <span><img src="assets/traefik.png" class="tag-ico" aria-hidden="true">Traefik</span>
             <span><img src="assets/k3s.png" class="tag-ico" aria-hidden="true">Kubernetes (k3s)</span>
             <span><img src="assets/argo-cd.png" class="tag-ico" aria-hidden="true">ArgoCD / GitOps</span>
-            <span>GitHub Actions</span><span>Gitleaks</span><span>Semgrep</span><span>Trivy</span>
-            <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Telegram</span>
+            <span><img src="assets/github.png" class="tag-ico" aria-hidden="true">GitHub Actions</span>
+            <span>Gitleaks</span><span>Semgrep</span>
+            <span><img src="assets/trivy.png" class="tag-ico" aria-hidden="true">Trivy</span>
+            <span><img src="assets/prometheus.png" class="tag-ico" aria-hidden="true">Prometheus</span>
+            <span><img src="assets/grafana.png" class="tag-ico" aria-hidden="true">Grafana</span>
+            <span><img src="assets/loki.png" class="tag-ico" aria-hidden="true">Loki</span>
+            <span><img src="assets/telegram.png" class="tag-ico" aria-hidden="true">Telegram</span>
           </div>
           <a class="project-link" href="https://github.com/Rachkpt/infra-lab" target="_blank" rel="noopener noreferrer"><img src="assets/github.png" alt="" aria-hidden="true"> Voir le dépôt &amp; la documentation complète <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
@@ -116,20 +121,37 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p><strong>Projet réalisé lors du hackathon ESIG Tech Arena</strong> (team NetForce4), sur le thème de la sécurité des infrastructures critiques&nbsp;: hôpitaux, banques et secteur de l'énergie. SOC souverain et open source à <strong>réponse graduée</strong> - il détecte les menaces informatiques <em>et industrielles (SCADA/Modbus)</em>, analyse par IA, et ne coupe jamais un équipement vital sans <strong>validation humaine via Telegram</strong>. Inclut l'anti-phishing e-mail (analyse des liens reçus) avec mise en liste noire automatique.</p>
-          <div class="tags"><span>Wazuh</span><span>Suricata</span><span>TheHive</span><span>Cortex</span><span>VirusTotal</span><span>IA (Groq)</span><span>Telegram</span><span>Modbus / SCADA</span><span>Réponse graduée</span></div>
+          <div class="tags">
+            <span><img src="assets/wazuh.png" class="tag-ico" aria-hidden="true">Wazuh</span>
+            <span>Suricata</span>
+            <span><img src="assets/thehive.png" class="tag-ico" aria-hidden="true">TheHive</span>
+            <span>Cortex</span>
+            <span><img src="assets/virustotal.png" class="tag-ico" aria-hidden="true">VirusTotal</span>
+            <span>IA (Groq)</span>
+            <span><img src="assets/telegram.png" class="tag-ico" aria-hidden="true">Telegram</span>
+            <span>Modbus / SCADA</span><span>Réponse graduée</span>
+          </div>
           <a class="project-link" href="https://github.com/Rachkpt/ESIG-TECH-ARENA" target="_blank" rel="noopener noreferrer"><img src="assets/github.png" alt="" aria-hidden="true"> Voir le projet sur GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
       </article>
 
       <article class="project-card reveal-zoom">
         <button class="skill-head" type="button" aria-expanded="false">
-          <span class="project-icon"><i class="fa-solid fa-bolt"></i></span>
+          <span class="project-icon project-icon-img"><img src="assets/splunk.png" alt="" aria-hidden="true"></span>
           <h3>Plateforme SOC automatisée - réponse en &lt;&nbsp;30&nbsp;s</h3>
           <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Plateforme SOC complète : détection temps réel avec Splunk, orchestration Python/Flask (webhooks), création automatique de cas TheHive, enrichissement des IOC via VirusTotal, blocage automatique des IP malveillantes (iptables/netsh) avec déblocage temporisé, push des IOC vers MISP, alertes Telegram &amp; Email.</p>
-          <div class="tags"><span>Splunk</span><span>Python / Flask</span><span>TheHive</span><span>Cortex</span><span>MISP</span><span>VirusTotal</span><span>Suricata</span></div>
+          <div class="tags">
+            <span><img src="assets/splunk.png" class="tag-ico" aria-hidden="true">Splunk</span>
+            <span><img src="assets/python.png" class="tag-ico" aria-hidden="true">Python / Flask</span>
+            <span><img src="assets/thehive.png" class="tag-ico" aria-hidden="true">TheHive</span>
+            <span>Cortex</span>
+            <span><img src="assets/misp.png" class="tag-ico" aria-hidden="true">MISP</span>
+            <span><img src="assets/virustotal.png" class="tag-ico" aria-hidden="true">VirusTotal</span>
+            <span>Suricata</span>
+          </div>
           <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_cybersecurity-infosec-soc-activity-7450800405443211264-N3fD" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
       </article>
@@ -142,7 +164,11 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Architecture Blue Team complète 100&nbsp;% open-source avec pipeline de threat intelligence OpenCTI + MISP.</p>
-          <div class="tags"><span>Wazuh</span><span>Elastic SIEM</span><span>Zeek</span><span>Shuffle</span></div>
+          <div class="tags">
+            <span><img src="assets/wazuh.png" class="tag-ico" aria-hidden="true">Wazuh</span>
+            <span><img src="assets/elasticsearch.png" class="tag-ico" aria-hidden="true">Elastic SIEM</span>
+            <span>Zeek</span><span>Shuffle</span>
+          </div>
         </div></div>
       </article>
 
@@ -154,7 +180,10 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Détection et prévention d'intrusion avec alerting Telegram, couplé à iptables (chaînes custom) et Fail2Ban.</p>
-          <div class="tags"><span>Suricata</span><span>iptables</span><span>Fail2Ban</span></div>
+          <div class="tags">
+            <span>Suricata</span><span>iptables</span>
+            <span><img src="assets/fail2ban.png" class="tag-ico" aria-hidden="true">Fail2Ban</span>
+          </div>
         </div></div>
       </article>
 
@@ -166,20 +195,27 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Infrastructure complète avec authentification Captive Portal reliée à Active Directory via RADIUS, IDS/IPS Snort, verrouillage des postes par GPO et supervision avancée des logs (DHCP, alertes Snort, événements Windows/AD) avec Graylog.</p>
-          <div class="tags"><span>pfSense</span><span>Snort</span><span>Windows Server 2025</span><span>Active Directory</span><span>RADIUS</span><span>Graylog</span></div>
+          <div class="tags">
+            <span><img src="assets/pfsense.png" class="tag-ico" aria-hidden="true">pfSense</span>
+            <span>Snort</span><span>Windows Server 2025</span><span>Active Directory</span><span>RADIUS</span>
+            <span><img src="assets/graylog.png" class="tag-ico" aria-hidden="true">Graylog</span>
+          </div>
           <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_cybersecurity-networksecurity-infosec-activity-7364665097320906753-88R0" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
       </article>
 
       <article class="project-card reveal-zoom">
         <button class="skill-head" type="button" aria-expanded="false">
-          <span class="project-icon"><i class="fa-solid fa-tower-observation"></i></span>
+          <span class="project-icon project-icon-img"><img src="assets/wazuh.png" alt="" aria-hidden="true"></span>
           <h3>Supervision réseau de l'ESIG</h3>
           <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Déploiement d'une solution Wazuh : collecte et analyse des événements de sécurité, surveillance des équipements.</p>
-          <div class="tags"><span>Wazuh</span><span>Monitoring</span></div>
+          <div class="tags">
+            <span><img src="assets/wazuh.png" class="tag-ico" aria-hidden="true">Wazuh</span>
+            <span>Monitoring</span>
+          </div>
         </div></div>
       </article>
 
@@ -191,7 +227,10 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Stack de métriques et de dashboards pour la supervision d'infrastructure.</p>
-          <div class="tags"><span>Prometheus</span><span>Grafana</span></div>
+          <div class="tags">
+            <span><img src="assets/prometheus.png" class="tag-ico" aria-hidden="true">Prometheus</span>
+            <span><img src="assets/grafana.png" class="tag-ico" aria-hidden="true">Grafana</span>
+          </div>
         </div></div>
       </article>
 
@@ -203,7 +242,10 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Architecture réseau fiable, évolutive et sécurisée reliant plusieurs départements et sites : VLANs, routage inter-VLAN niveau 3, haute disponibilité HSRP, routage dynamique OSPF, EtherChannel, DHCP, DNS/HTTP et Wi-Fi intégré.</p>
-          <div class="tags"><span>Cisco Packet Tracer</span><span>OSPF</span><span>HSRP</span><span>VLAN</span><span>EtherChannel</span></div>
+          <div class="tags">
+            <span><img src="assets/cisco.png" class="tag-ico" aria-hidden="true">Cisco Packet Tracer</span>
+            <span>OSPF</span><span>HSRP</span><span>VLAN</span><span>EtherChannel</span>
+          </div>
           <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_cisco-networking-ciscopackettracer-activity-7463484083701207040-ZGJE" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
       </article>
@@ -216,7 +258,13 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Projet d'équipe (ESIG) : 3 LAN segmentés en VLANs + zone DMZ, sécurisation inter-zones par deux pare-feu FortiGate, contrôleur de domaine Active Directory, supervision Zabbix, GPO de partage automatique et tests de sécurité sous Parrot OS.</p>
-          <div class="tags"><span>GNS3</span><span>FortiGate</span><span>Active Directory</span><span>Zabbix</span><span>Parrot OS</span></div>
+          <div class="tags">
+            <span><img src="assets/gns3.png" class="tag-ico" aria-hidden="true">GNS3</span>
+            <span><img src="assets/fortinet.png" class="tag-ico" aria-hidden="true">FortiGate</span>
+            <span>Active Directory</span>
+            <span><img src="assets/zabbix.png" class="tag-ico" aria-hidden="true">Zabbix</span>
+            <span>Parrot OS</span>
+          </div>
           <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_raezseaux-cybersaezcuritaez-gns3-activity-7323001615836180481-eH9N" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
       </article>
@@ -229,7 +277,10 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Infrastructures complètes : VLAN, DHCP, routage Inter-VLAN, EtherChannel, NAT, ACL. Conception et dépannage.</p>
-          <div class="tags"><span>GNS3</span><span>VLAN</span><span>NAT / ACL</span></div>
+          <div class="tags">
+            <span><img src="assets/gns3.png" class="tag-ico" aria-hidden="true">GNS3</span>
+            <span>VLAN</span><span>NAT / ACL</span>
+          </div>
         </div></div>
       </article>
 
@@ -241,7 +292,10 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Environnement SIP/RTP, génération de trafic et analyse des communications avec Wireshark.</p>
-          <div class="tags"><span>SIP</span><span>RTP</span><span>Wireshark</span></div>
+          <div class="tags">
+            <span>SIP</span><span>RTP</span>
+            <span><img src="assets/wireshark.png" class="tag-ico" aria-hidden="true">Wireshark</span>
+          </div>
         </div></div>
       </article>
 
@@ -253,20 +307,28 @@
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Laboratoire de 6 machines virtuelles combinant supervision Nagios, téléphonie IP FreePBX avec redondance (continuité de service), serveur de messagerie ISPConfig et agrégateur FreshRSS - le tout 100&nbsp;% open-source.</p>
-          <div class="tags"><span>VirtualBox</span><span>Nagios</span><span>FreePBX</span><span>ISPConfig</span><span>FreshRSS</span></div>
+          <div class="tags">
+            <span><img src="assets/virtualbox.png" class="tag-ico" aria-hidden="true">VirtualBox</span>
+            <span><img src="assets/nagios.png" class="tag-ico" aria-hidden="true">Nagios</span>
+            <span><img src="assets/freepbx.png" class="tag-ico" aria-hidden="true">FreePBX</span>
+            <span>ISPConfig</span><span>FreshRSS</span>
+          </div>
           <a class="project-link" href="https://www.linkedin.com/posts/ar-rachad-aledji_virtualbox-nagios-voip-activity-7298824759901904897-pd1B" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="" aria-hidden="true"> Voir le post LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div></div>
       </article>
 
       <article class="project-card reveal-zoom">
         <button class="skill-head" type="button" aria-expanded="false">
-          <span class="project-icon"><i class="fa-solid fa-wifi"></i></span>
+          <span class="project-icon project-icon-img"><img src="assets/mikrotik.png" alt="" aria-hidden="true"></span>
           <h3>Portail captif MikroTik</h3>
           <span class="skill-chevron"><i class="fa-solid fa-chevron-down"></i></span>
         </button>
         <div class="skill-body"><div class="skill-body-inner">
           <p>Page de connexion hotspot MikroTik personnalisée avec authentification CHAP MD5.</p>
-          <div class="tags"><span>MikroTik</span><span>CHAP MD5</span></div>
+          <div class="tags">
+            <span><img src="assets/mikrotik.png" class="tag-ico" aria-hidden="true">MikroTik</span>
+            <span>CHAP MD5</span>
+          </div>
         </div></div>
       </article>
 
